@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Augmented Reality in JavaScript</title>
+  <meta name="author" content="Ali Spittel" />
+  <link href="./style.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+  <div class="fallback-message">
+    <p>Your browser
+      <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.
+    </p>
+    <p>For the best experience please use the latest
+      <b>Chrome</b>,
+      <b>Safari</b> or
+      <b>Firefox</b> browser.</p>
+  </div>
+
+
+  <div id="impress" data-transition-duration="500">
+
+    <div class="step center first-slide" id="intro" data-scale="2" data-x="-500" data-y="-500">
+      <div class="name">
+        <rainbow-text text="AUGMENTED REALITY IN JAVASCRIPT" font-size="100"></rainbow-text>
+        <div class="intro">
+          by Ali Spittel
+        </div>
+      </div>
+    </div>
+
+    <div id="roadmap" class="step" data-rel-x="3000" data-rel-y="1000">
+      <rainbow-text text="ROADMAP" font-size="50"></rainbow-text>
+      <ul>
+        <li>Define augmented reality</li>
+        <li>Play with a bunch of demos</li>
+        <li>Look at the types of augmented reality</li>
+        <li>Look at some code</li>
+        <li>Q&amp;A</li>
+      </ul>
+    </div>
+
+    <div id="what-is-ar" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="WHAT IS AUGMENTED REALITY?" font-size="50"></rainbow-text>
+      <blockquote>Augmented reality (AR) is a direct or indirect live view of a physical, real-world environment whose elements are "augmented"
+        by computer-generated perceptual information, ideally across multiple sensory modalities, including visual, auditory,
+        haptic, somatosensory, and olfactory.</blockquote>
+      <p>- Wikipedia</p>
+    </div>
+
+    <div id="why-im-talking-about-it" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="WHY AM I TALKING ABOUT AR?" font-size="50"></rainbow-text>
+      <p>
+        TL;DR: I wrote
+        <a href="https://dev.to/aspittel/facial-recognition-in-javascript-using-trackingjs-3l7">an article</a> about re-creating SnapChat's filters using a JavaScript library called tracking.js.
+      </p>
+    </div>
+
+
+    <div id="applications-of-ar" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="APPLICATIONS OF AR" font-size="50"></rainbow-text>
+      <ul>
+        <li>Art</li>
+        <li>Games</li>
+        <li>Businesses</li>
+        <li>Social good</li>
+      </ul>
+    </div>
+
+    <div id="demos-demos-demos" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="DEMOS, DEMOS, DEMOS" font-size="50"></rainbow-text>
+    </div>
+
+    <div id="business" class="step" data-rel-x="2000" data-rel-y="1000">
+      <h2>
+        <a href="https://www.covergirl.com/en_us/tryit">CoverGirl Makeup</a>
+      </h2>
+      <rainbow-text text="Ikea" font-size="50"></rainbow-text>
+      <div class="iframe">
+        <iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/vDNzTasuYEw" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="drawn" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="Drawn by Zach Lieberman" font-size="50"></rainbow-text>
+      <div class="iframe">
+        <iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/qXpiA1ZJ1zI" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="pokemon-go" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="Pokemon Go" font-size="50"></rainbow-text>
+      <img src="http://www.trbimg.com/img-5948534e/turbine/ct-bsi-pokemon-go-fest-grant-park-20170619" alt="Pokemon Go">
+    </div>
+
+    <div id="climbing" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="Climbing" font-size="50"></rainbow-text>
+      <div class="iframe">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oI7kLrpoqMs" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="audio-walking-tour" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="Walking Tour" font-size="50"></rainbow-text>
+      <a href="http://www.molmolk.com/#/audio-walking-tour-ar/">Link</a>
+    </div>
+
+    <div id="the-enemy" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="The Enemy" font-size="50"></rainbow-text>
+      <div class="iframe">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zG0w_l-o4ks" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="types-of-ar" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="TYPES OF AR" font-size="50"></rainbow-text>
+      <ul>
+        <li>Marker-Based Augmented Reality</li>
+        <li>Marker-less Augmented Reality</li>
+        <li>Projection Augmented Reality</li>
+        <li>Superimposition Based Augmented Reality</li>
+      </ul>
+    </div>
+
+
+    <div id="10-lines-code" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="AR in 10 lines of html" font-size="50"></rainbow-text>
+      <a href="https://codepen.io/jeromeetienne/pen/mRqqzb?editors=1010">Link</a>
+    </div>
+
+    <div id="the0project" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="Facial Recognition" font-size="50"></rainbow-text>
+      <p>I saw a couple articles about facial recognition in Python and I wanted to see if this data-science-y technology could
+        be easily adapted to the front-end of a project. I'm also interested in the intersection of art and code, and augmented
+        reality seems like a really interesting medium for that.</p>
+
+      <rainbow-text text="My App" font-size="50"></rainbow-text>
+      <p>
+        <a href="https://www.alispit.tel/tracking/">Let's look at the project...</a>
+      </p>
+      <p>
+        <a href="https://github.com/aspittel/tracking/blob/master/script.js">And the code...</a>
+      </p>
+    </div>
+
+    <div id="the-algorithm" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="The Algorithm" font-size="50"></rainbow-text>
+      <p>
+        <a href="https://github.com/eduardolundgren/tracking.js/tree/master/src/detection/training/haar">Tracking.js</a> uses the
+        <a href="https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework">Viola Jones algorithm</a>: which focuses on facial detection. The algorithm focuses on a few facial features, for
+        example: </p>
+      <ul>
+        <li>The eye region is darker than the upper-cheeks.</li>
+        <li>The nose bridge region is brighter than the eyes.</li>
+      </ul>
+      <p>The algorithm adds up the pixel values in a rectangle and compares them to the sum of the pixels in another rectangle
+        in the image. Light rectangles are positive and dark ones are negative. It uses those differences to classify whether
+        or not a rectangle contains a face.</p>
+    </div>
+
+    <div id="" class="step" data-rel-x="2000" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="More Resources" font-size="50"></rainbow-text>
+        <p>
+          <a href="http://wearables.cc.gatech.edu/paper_of_week/viola01rapid.pdf">The Viola Jones Paper</a>
+        </p>
+        <p>
+          <a href="https://github.com/eduardolundgren/tracking.js/blob/master/src/detection/ViolaJones.js">Tracking.js Implementation of ViolaJones Algorithm</a>
+        </p>
+        <p>
+          <a href="https://dev.to/aspittel/facial-recognition-in-javascript-using-trackingjs-3l7">My Article on Tracking.js</a>
+        </p>
+        <p>
+          <a href="https://www.codenewbie.org/podcast/how-to-get-started-in-augmented-reality">CodeNewbie: How to get started in Augmented Reality</a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/zach.lieberman/?hl=en">Zach Lieberman's Instagram</a>
+        </p>
+        <p>
+          <a href="https://github.com/eduardolundgren/tracking.js">Tracking.js</a>
+        </p>
+        <p>
+          <a href="https://github.com/jeromeetienne/AR.js/blob/master/README.md">AR.js</a>
+        </p>
+        <p>
+
+        </p>
+      </div>
+    </div>
+
+
+    <div id="keep-in-touch" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="KEEP IN TOUCH!" font-size="75"></rainbow-text>
+      </div>
+      <p>
+        <a href="https://twitter.com/aspittel">Twitter</a>
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/aspittel/">LinkedIn</a>
+      </p>
+      <p>
+        <a href="http://www.alispit.tel">Website</a>
+      </p>
+      <p>
+        <a href="http://github.com/aspittel">GitHub</a>
+      </p>
+    </div>
+
+    <script type="text/javascript" src="./js/impress.js"></script>
+    <script>
+      impress().init()
+    </script>
+    <script type="text/javascript" src="./js/rainbow-component.js"></script>
+</body>
+
+</html>
