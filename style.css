@@ -1,133 +1,139 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:400,800');
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat:400,800");
 
 /* Fallback Message */
 
 .fallback-message {
-    font-family: sans-serif;
-    line-height: 1.3;
+  font-family: sans-serif;
+  line-height: 1.3;
 
-    width: 780px;
-    padding: 10px 10px 0;
-    margin: 20px auto;
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
 
-    border: 1px solid #E4C652;
-    border-radius: 10px;
-    background: #EEDC94;
+  border: 1px solid #e4c652;
+  border-radius: 10px;
+  background: #eedc94;
 }
 
 .fallback-message p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .impress-supported .fallback-message {
-    display: none;
+  display: none;
 }
 
 .intro {
-    font-family: monospace;
+  font-family: monospace;
 }
 
 body {
-    font-family: 'PT Sans', sans-serif;
-    min-height: 740px;
+  font-family: "PT Sans", sans-serif;
+  min-height: 740px;
 
-    background: white;
-    color: black;
-    font-family: 'Lato', sans-serif;
+  background: white;
+  color: black;
+  font-family: "Lato", sans-serif;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .red {
-    color: #ef5350;
+  color: #ef5350;
 }
 
 .purple {
-    color: #ab47bc;
+  color: #ab47bc;
 }
 
 .bright-blue {
-    color: #651fff;
+  color: #651fff;
 }
 
 .dark-blue {
-    color: #3949ab;
+  color: #3949ab;
 }
 
 .blue {
-    color: #2196f3;
+  color: #2196f3;
 }
 
 .teal {
-    color: #00bcd4;
+  color: #00bcd4;
 }
 
 .green {
-    color: #4caf50;
+  color: #4caf50;
 }
 
 .yellow {
-    color: #ffc107;
+  color: #ffc107;
 }
 
 .pink {
-    color: #ff80ab;
+  color: #ff80ab;
 }
 
 .orange {
-    color: #ff8f00;
+  color: #ff8f00;
 }
 
 .hot-pink {
-    color: #e91e63;
+  color: #e91e63;
 }
 
 .name {
-    margin-top: 20%;
-    text-align: center;
+  margin-top: 20%;
+  text-align: center;
 }
 
 .slide-header {
-    font-size: 50px;
-    text-align: center;
+  font-size: 50px;
+  text-align: center;
 }
 
 .logo {
-    text-align: center;
-    display: block;
-    font-size: 100px;
-    line-height: 110px;
-    letter-spacing: 0px;
+  text-align: center;
+  display: block;
+  font-size: 100px;
+  line-height: 110px;
+  letter-spacing: 0px;
 }
 
-
 .letter {
-    font-weight: 800;
-    letter-spacing: -20px;
-    mix-blend-mode: darken;
-    position: relative;
-    transition-delay: 2s;
-    opacity: 0.9;
+  font-weight: 800;
+  letter-spacing: -20px;
+  mix-blend-mode: darken;
+  position: relative;
+  transition-delay: 2s;
+  opacity: 0.9;
 }
 
 .smaller-letter {
-    font-weight: 800;
-    letter-spacing: -10px;
-    mix-blend-mode: darken;
-    position: relative;
-    transition-delay: 2s;
-    opacity: 0.9;
+  font-weight: 800;
+  letter-spacing: -10px;
+  mix-blend-mode: darken;
+  position: relative;
+  transition-delay: 2s;
+  opacity: 0.9;
 }
 
 .step {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 
-    width: 900px;
-    height: 700px;
-    margin: 20px auto;
-    padding: 40px 60px;
+  width: 900px;
+  height: 700px;
+  /* margin: 20px auto;
+  padding: 40px 60px; */
 
-    font-size: 30px;
-    letter-spacing: -1px;
+  font-size: 40px;
+  letter-spacing: -1px;
 }
 /*
     Make inactive steps a little bit transparent.
@@ -146,93 +152,91 @@ body {
 */
 
 .notes {
-    display: none;
+  display: none;
 }
 
-h1, 
-h2, 
+h1,
+h2,
 h3 {
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-    text-align: center;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  text-align: center;
 }
 
 p {
-    text-align: center;
-    margin: 0.7em;
+  text-align: center;
+  margin: 0.7em;
 }
 
 li {
-    margin: 0.2em;    
+  margin: 0.2em;
 }
 
 /* Highlight.js used for coloring pre > code blocks. */
 pre > code {
-    font-size: 14px;
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  font-size: 14px;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 /* Inline code, no Highlight.js */
 code {
-    font-family: "Cutive mono","Courier New", monospace;
+  font-family: "Cutive mono", "Courier New", monospace;
 }
 
-
 a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0 0.1em;
-    background: rgba(200,200,200,0.3);
-    text-shadow: -1px 1px 2px rgba(100,100,100,0.9);
-    border-radius: 0.2em;
-    border-bottom: 1px solid rgba(100,100,100,0.4);
-    border-left:   1px solid rgba(100,100,100,0.4);
+  color: inherit;
+  text-decoration: none;
+  padding: 0 0.1em;
+  background: rgba(200, 200, 200, 0.3);
+  text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.9);
+  border-radius: 0.2em;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.4);
+  border-left: 1px solid rgba(100, 100, 100, 0.4);
 
-    transition:         0.5s;
+  transition: 0.5s;
 }
 a:hover,
 a:focus {
-    background: rgba(200,200,200,1);
-    text-shadow: -1px 1px 2px rgba(100,100,100,0.5);
+  background: rgba(200, 200, 200, 1);
+  text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.5);
 }
 
 blockquote {
-    font-family: 'PT Serif';
-    font-style: italic;
-    font-weight: 400;    
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
 }
 
 em {
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);    
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 strong {
-    text-shadow: -1px 1px 2px rgba(100,100,100,0.5);
+  text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.5);
 }
 
 q {
-    font-family: 'PT Serif';
-    font-style: italic;
-    font-weight: 400;    
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 strike {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 small {
-    font-size: 0.4em;
+  font-size: 0.4em;
 }
 
 img {
-    width: 800px
+  width: 100%;
 }
 
 .active {
-    opacity: 1;
+  opacity: 1;
 }
-
 
 /******************* PLUGINS *************************************************************/
 /*
@@ -240,14 +244,14 @@ img {
   plugin that allows easy navigation between steps and autoplay.
 */
 .impress-enabled div#impress-toolbar {
-    position: fixed;
-    right: 1px;
-    bottom: 1px;
-    opacity: 0.6;
-    z-index: 10;
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+  opacity: 0.6;
+  z-index: 10;
 }
 .impress-enabled div#impress-toolbar > span {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /*
@@ -255,17 +259,15 @@ img {
     have it show only when you move/click/touch the mouse.
 */
 body.impress-mouse-timeout div#impress-toolbar {
-    display: none;
+  display: none;
 }
 
 /*
     In fact, we can hide the mouse cursor itself too, when mouse isn't used.
 */
 body.impress-mouse-timeout {
-    cursor: none;
+  cursor: none;
 }
-
-
 
 /* Progress bar */
 .impress-progressbar {
@@ -276,7 +278,7 @@ body.impress-mouse-timeout {
   border-radius: 7px;
   border: 2px solid rgba(100, 100, 100, 0.2);
 }
-.impress-progressbar DIV {
+.impress-progressbar div {
   width: 0;
   height: 2px;
   border-radius: 5px;
@@ -294,46 +296,49 @@ body.impress-mouse-timeout {
 
 /* Help popup plugin */
 .impress-enabled #impress-help {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
-    color: #EEEEEE;
-    font-size: 80%;
-    position: fixed;
-    left: 2em;
-    bottom: 2em;
-    width: 24em;
-    border-radius: 1em;
-    padding: 1em;
-    text-align: center;
-    z-index: 100;
-    font-family: Verdana, Arial, Sans;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+  color: #eeeeee;
+  font-size: 80%;
+  position: fixed;
+  left: 2em;
+  bottom: 2em;
+  width: 24em;
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
+  z-index: 100;
+  font-family: Verdana, Arial, Sans;
 }
 .impress-enabled #impress-help td {
-    padding-left: 1em;
-    padding-right: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /* Substep plugin */
 
 #impress .step .substep {
-    opacity: 0;
+  opacity: 0;
 }
 
 #impress .step .substep.substep-visible {
-    opacity: 1;
-    transition: opacity 1s;
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 /* .impress-enabled                          { pointer-events: none }
 .impress-enabled #impress                 { pointer-events: auto } */
-.impress-enabled #impress-toolbar         { pointer-events: auto }
-.impress-enabled #impress-console-button  { pointer-events: auto }
-
+.impress-enabled #impress-toolbar {
+  pointer-events: auto;
+}
+.impress-enabled #impress-console-button {
+  pointer-events: auto;
+}
 
 rainbow-text {
-    text-align: center;
+  text-align: center;
 }
 
 .iframe {
-    text-align:center;
-    width:100%;
+  text-align: center;
+  width: 100%;
 }
