@@ -88,7 +88,7 @@ const getStyle = (fontSize = '50') => {
 
 class RainbowText extends HTMLElement {
   connectedCallback () {
-    this.createShadowRoot()
+    this.attachShadow({ mode: 'open' })
     this.text = this.getAttribute('text')
     this.size = this.getAttribute('font-size')
     this.render()
@@ -129,7 +129,7 @@ class RainbowText extends HTMLElement {
 
   addSpans (div) {
     Array.from(this.text).forEach(letter => {
-      let span = this.createSpan(letter)
+      const span = this.createSpan(letter)
       div.appendChild(span)
     })
   }
